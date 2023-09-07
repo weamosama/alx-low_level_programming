@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main
- * echom "and that peace"
- * Return1
- * */
+ *main - Entry point
+ *Return: Always 1 (Success)
+ **/
 int main() 
 {
 	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
