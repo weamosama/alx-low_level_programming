@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
-*main - Entry point Return: Always 1 (Suc
+*main - Entry point
+*Return: Always 1 (Suc
 *cess)
 **/
 int main(void) 
