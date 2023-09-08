@@ -10,8 +10,12 @@ int main(void)
 
 	for (i = 0; i < 16; i++)
 	{
-		char s = i==15?' ':',';
-		putchar(hex_digits[i] + s);
+		if (i == 15)
+		{
+			putchar(hex_digits[i] + '0');
+		}else{
+			putchar(hex_digits[i] + ',');
+		}
 	}
 	putchar('\n');
 
