@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  *  main n number
+ *
  *  Return 0
 **/
 int main(void)
