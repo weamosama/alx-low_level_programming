@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-	int i, j;
+	int i, j, k;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -16,7 +16,7 @@ int main(void)
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(k + '0');
-				if (k < 9)
+				if (i < 8)
 				{
 					putchar(',');
 					putchar(' ');
