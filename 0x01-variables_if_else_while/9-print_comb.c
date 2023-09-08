@@ -11,7 +11,8 @@ int main(void)
 	{
 		if (i < 9)
 		{
-			putchar(i + ', ');
+			putchar(i + ',');
+			putchar(' ');
 		}else
 		{
 			putchar(i + '0');
