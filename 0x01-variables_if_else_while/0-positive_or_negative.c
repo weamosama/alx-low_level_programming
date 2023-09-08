@@ -4,7 +4,7 @@
 /**
  *  main - entry point
  *
- *  Return 0
+ *  Return: alwys0
 */
 int main(void)
 {
