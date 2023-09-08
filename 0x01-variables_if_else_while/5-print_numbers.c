@@ -9,7 +9,7 @@ int main(void)
 
 	while (n <= 9)
 	{
-		put(n);
+		puts(n);
 		n++;
 	}
 
