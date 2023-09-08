@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *  main n number
+ *  main -n number
  *
  *  Return 0
 **/
