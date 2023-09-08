@@ -5,16 +5,14 @@
 */
 int main(void)
 {
-	char hex_digits[] = "0123456789abcdef";
-	int i;
-
-	for (i = 0; i < 16; i++)
+	for (int i = 0; i < 16; i++)
 	{
-		if (i == 15)
+		if (i < 10)
 		{
-			putchar(hex_digits[i] + '0');
-		}else{
-			putchar(hex_digits[i] + ',');
+			putchar('0' + i);
+		}else
+		{
+			putchar('a' + (i - 10));
 		}
 	}
 	putchar('\n');
