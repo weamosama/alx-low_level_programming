@@ -3,7 +3,7 @@
  *main - entry 
  *Return:0
 */
-int main()
+int main(void)
 {
 	char letter = 'a';
 
@@ -13,6 +13,8 @@ int main()
 		letter++;
 											}
 	}
-	putchar("\n");
+
+	putchar('\n');
+
 	return (0);
 }
