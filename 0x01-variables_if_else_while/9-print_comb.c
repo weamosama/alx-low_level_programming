@@ -7,15 +7,13 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 	{
+		putchar(i + '0');
 		if (i < 9)
 		{
-			putchar('0' + i + ',');
+			putchar(',');
 			putchar(' ');
-		}else
-		{
-			putchar('0'+ i);
 		}
 	}
 	putchar('\n');
