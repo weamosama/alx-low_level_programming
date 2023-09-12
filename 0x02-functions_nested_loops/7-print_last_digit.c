@@ -4,7 +4,7 @@
  * print_last_digit - main function
  *
  * @n: number to get last digit
- * Return: last digit 
+ * Return: last digit
  *
  */
 
