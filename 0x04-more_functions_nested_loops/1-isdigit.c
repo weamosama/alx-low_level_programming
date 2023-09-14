@@ -3,7 +3,7 @@
   *_isdigit - isdigi
   *@c: f
   *Return: 01
- **/
+ */
 
 int _isdigit(int c)
 {
