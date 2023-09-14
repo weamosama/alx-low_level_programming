@@ -1,8 +1,8 @@
 #include "main.h"
  /**
-  *_isdigit - isdigi
-  *@c: f
-  *Return: 01
+  * _isdigit - isdigi
+  * @c: f
+  * Return: 01
  */
 
 int _isdigit(int c)
