@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isupper - test
+ *_isupper - test
  * @c:char
  * Return: 0or1
  **/
