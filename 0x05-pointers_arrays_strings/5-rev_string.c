@@ -1,10 +1,10 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- * print_rev - test
+ * rev_string - test
  * @s: char
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 	char t;
