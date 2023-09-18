@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - test
  * @a: char
@@ -12,7 +13,7 @@ void print_array(int *a, int n)
 	{
 		_putchar(a[i]);
 		if (i != n-1)
-			_putchar(', ');
+			printf(", ");
 	}
 		_putchar('\n');
 }
