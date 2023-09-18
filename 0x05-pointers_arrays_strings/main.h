@@ -14,4 +14,6 @@ void swap_int(int *a, int *b);
  * Return: returns length
  */
 int _strlen(char *s);
+int _putchar(char c);
+void _puts(char *str);
 #endif
