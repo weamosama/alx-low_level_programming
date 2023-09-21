@@ -2,7 +2,6 @@
 /**
  * leet - Encode a string into 1337.
  * @str: Pointer to the input string.
- *
  * Return: Pointer to the modified string.
  */
 char *leet(char *str)
@@ -28,7 +27,5 @@ char *leet(char *str)
 			}
 		}
 	}
-
 	return (str);
 }
-
