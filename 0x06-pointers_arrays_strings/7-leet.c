@@ -21,7 +21,7 @@ char *leet(char *str)
 			if (str[i] == leet_chars[j])
 			{
 				str[i] = leet_codes[j];
-				break; /* Exit the inner loop once a match is found */
+				break;
 			}
 		}
 	}
