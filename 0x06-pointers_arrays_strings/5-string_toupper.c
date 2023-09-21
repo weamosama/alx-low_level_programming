@@ -12,8 +12,7 @@ char *string_toupper(char *str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			// Convert lowercase letter to uppercase by adjusting the ASCII value
-			str[i] = str[i] - ('a' - 'A');
+			str[i] = str[i] - 32;
 		}
 	}
 
