@@ -1,8 +1,9 @@
+#include "main.h"
 /**
- *leet - Encode a string into 1337.
- *@str: Pointer to the input string.
+ * leet - Encode a string into 1337.
+ * @str: Pointer to the input string.
  *
- *Return: Pointer to the modified string.
+ * Return: Pointer to the modified string.
  */
 char *leet(char *str)
 {
@@ -16,10 +17,11 @@ char *leet(char *str)
 			if (str[i] == leet_chars[j])
 			{
 				str[i] = leet_codes[j];
-				break;
+				break; /* Exit the inner loop once a match is found */
 			}
 		}
 	}
 
 	return str;
 }
+
