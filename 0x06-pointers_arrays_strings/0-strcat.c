@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  *_stract -test
  *@dest: r
