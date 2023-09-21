@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _stract -test
+ * _stract - test
  * @dest: r
  * @src: f
  * Return: char
@@ -8,7 +8,6 @@
 char *_strcat(char *dest, char *src)
 {
 	int i;
-
 	int j;
 
 	for (i = 0; dest[i] != '\0'; i++)
