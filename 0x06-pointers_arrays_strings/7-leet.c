@@ -8,10 +8,10 @@
 char *leet(char *str)
 {
 	char *leet_chars;
-       
+
 	leet_chars = "aAeEoOtTlL";
 	char *leet_codes;
-       
+
 	leet_codes = "4433007711";
 
 	for (int i = 0; str[i] != '\0'; i++)
