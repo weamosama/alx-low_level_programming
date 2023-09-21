@@ -1,23 +1,25 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _stract -test
- * @dest: r
- * @src: f
- * Return: char
+ *_stract -test
+ *@dest: r
+ *@src: f
+ *Return: char
  *
  */
 char *_strcat(char *dest, char *src)
-{  
-       int i;
-	
-       int destSize;
-	
-       int srcSize;
+{
+	int i;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		destSize++;
-	for (srcSize = 0; src[srcSize] != '\0'; srcSize++)
-		dest[destSize + srcSize] = src[srcSize];
-	dest[destSize + srcSize] = '\0';
+	int j;
+
+	for (i = 0; dest[i] != '\0'; i+i+)
+       	{
+	}
+
+	for (j = 0; src[j] != '\0'; j++)
+		dest[i + j] = src[j];
+	dest[i + j] = '\0';
 	return (dest);
 }
