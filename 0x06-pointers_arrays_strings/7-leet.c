@@ -14,9 +14,11 @@ char *leet(char *str)
 
 	leet_codes = "4433007711";
 
-	for (int i = 0; str[i] != '\0'; i++)
+	int i, j;
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (int j = 0; leet_chars[j] != '\0'; j++)
+		for (j = 0; leet_chars[j] != '\0'; j++)
 		{
 			if (str[i] == leet_chars[j])
 			{
