@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *string_toupper - Convert all lowercase letters in a string to uppercase.
  *@str: Pointer to the input string.
