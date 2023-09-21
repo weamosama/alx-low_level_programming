@@ -2,10 +2,10 @@
 #include "2-strlen.c"
 
 /**
- *_atoi - converts string to integer
- *@s: string to convert
+ *_atoi - converts r
+ *@s: string 
  *
- *Return: returns integer value
+ *Return: returns
  */
 int _atoi(char *s)
 {
