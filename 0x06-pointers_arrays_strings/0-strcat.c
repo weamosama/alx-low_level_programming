@@ -10,7 +10,7 @@ char *_strcat(char *dest, char *src)
 {  
        int i;
 	
-       int destSize=0;
+       int destSize;
 	
        int srcSize;
 
