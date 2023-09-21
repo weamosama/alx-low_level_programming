@@ -4,7 +4,6 @@
  *@dest: r
  *@src: f
  *Return: char
- *
  */
 char *_strcat(char *dest, char *src)
 {
