@@ -2,15 +2,15 @@
 /**
  *cap_string - Capitalize all words in a string.
  *@str: Pointer to the input string.
+ *
  *Return: Pointer to the modified string.
  */
 char *cap_string(char *str)
 {
 	int i;
-
-	i = 0;
 	int new_word;
 
+	i = 0;
 	new_word = 1;
 
 	while (str[i] != '\0')
@@ -28,6 +28,7 @@ char *cap_string(char *str)
 			{
 				str[i] = str[i] - 32;
 			}
+
 			new_word = 0;
 		}
 		else
