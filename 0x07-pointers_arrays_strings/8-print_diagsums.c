@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_chessboard - test
+ * print_diagsums - test
  * @a: tets
- * @n: size
+ * @size: size
  */
 void print_diagsums(int *a, int size)
 {
