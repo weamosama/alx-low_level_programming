@@ -6,7 +6,7 @@
  * @c: char
  * Return: char
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int i;
 
@@ -17,5 +17,5 @@ char *_strchr(char *s, char c);
 	}
 	if (s[i] == c)
 		return (&s[i]);
-	return (0);
+	return (NULL);
 }
