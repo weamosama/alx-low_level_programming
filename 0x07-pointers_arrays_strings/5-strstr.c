@@ -20,7 +20,6 @@ char *_strstr(char *haystack, char *needle)
 				found = 0;
 				break;
 			}
-			
 		}
 		if (found == 1)
 			return (haystack + i);
