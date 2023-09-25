@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < n; i++)
 	{
 		fsum += a[i * n + i];
-		lsum += a[i * n + (n - 1 - i)];
+		lsum += a[(n - 1) + ((n - 1) * i)];
 	}
 	printf("%d, %d\n",fsum, lsum);
 	
