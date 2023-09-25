@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strpbrk - test
- * @s: char
- * @accept: char
+ * _strstr - test
+ * @haystack: tets
+ * @needle: char
  * Return: int
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 
@@ -16,11 +16,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				return (&s[i]);
+				return (s + i);
 			}
 		}
 	}
 	if (s[i] == accept[j])
-		return (&s[i]);
+		return (s + i);
 	return (Null);
 }
