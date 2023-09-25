@@ -1,5 +1,6 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
  * print_diagsums - test
  * @a: tets
@@ -7,7 +8,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, fsum = 0, lsum = 0, n;
+	int i, fsum = 0, lsum = 0, n;
 
 	n = size;
 	for (i = 0; i < n; i++)
