@@ -7,8 +7,9 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, fsum = 0, lsum = 0;
+	int i, j, fsum = 0, lsum = 0, n;
 
+	n = size;
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -17,7 +18,9 @@ void print_diagsums(int *a, int size)
 				fsum += a[i][j];
 			if (j == n - 1 - i)
 				lsum += a[i][j];
+		
 		}
-		printf("%d, %d\n",fsum, lsum);
 	}
+	printf("%d, %d\n",fsum, lsum);
+	
 }
