@@ -1,6 +1,22 @@
 #include "main.h"
 /**
- *is_prime_number - checks if a number is prime
+ *is_divisible - checks if n is divisible by a divisor
+ *@n: the number to check
+ *@divisor: the current divisor being checked
+ *
+ *Return: 1 if n is divisible by divisor, 0 otherwise
+ */
+int is_divisible(int n, int divisor)
+{
+	if (divisor == 1)
+		return (0);
+	else if (n % divisor == 0)
+		return (1);
+	return (is_divisible(n, divisor - 1));
+}
+
+/**
+ *is_prime_number - checks if a number is prime recursively
  *@n: the number to check
  *
  *Return: 1 if n is prime, 0 otherwise
@@ -9,17 +25,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	if (n <= 3)
+	else if (n == 2)
 		return (1);
-
-	if (n % 2 == 0 || n % 3 == 0)
-		return (0);
-	int i;
-
-	for (i = 5; i * i <= n; i += 6)
-	{
-		if (n % i == 0 || n % (i + 2) == 0)
-			return (0);
-	}
-	return (1);
+	return (!is_divisible(n, n - 1));
 }
