@@ -27,5 +27,5 @@ int helper_sqrt(int n, int j)
 		return (j);
 	if (j * j > n)
 		return (-1);
-	return (helper_sqrt(n, i + 1));
+	return (helper_sqrt(n, j + 1));
 }
