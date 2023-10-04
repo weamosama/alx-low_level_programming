@@ -2,12 +2,11 @@
 #include <stdlib.h>
 
 /**
- *create_array -test
+ *strdup -test
  *@size: int
- *@c char
  *Return - test
  */
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
 	unsigned int i;
 	char *arr;
