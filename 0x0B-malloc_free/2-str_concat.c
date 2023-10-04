@@ -10,7 +10,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	size_t lent_s1, len_s2;
+	size_t len_s1, len_s2;
 	char *concatenated;
 
 	if (s1 == NULL)
