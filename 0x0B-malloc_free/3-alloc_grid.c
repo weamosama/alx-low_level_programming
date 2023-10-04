@@ -3,9 +3,8 @@
 /**
  *alloc_grid - Allocate memory for a 2D array of integers and initialize to 0.
  *@width: The width (number of columns) of the grid.
- *@height: The height (number of rows) of 
- *
- *Return: A pointer 
+ *@height: The height (number of rows) of
+ *Return: A pointer
  */
 int **alloc_grid(int width, int height)
 {
@@ -17,7 +16,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	grid = (int **) malloc(height* sizeof(int*));
+	grid = (int **) malloc(height * sizeof(int *));
 
 	if (grid == NULL)
 	{
@@ -26,7 +25,7 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = (int*) malloc(width* sizeof(int));
+		grid[i] = (int *) malloc(width * sizeof(int));
 
 		if (grid[i] == NULL)
 		{
@@ -36,7 +35,7 @@ int **alloc_grid(int width, int height)
 			}
 
 			free(grid);
-			return NULL;
+			return (NULL);
 		}
 
 		for (j = 0; j < width; j++)
