@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
- *_strdup -test
- *@size: int
- *Return - test
+ *_strdup - test
+ *@str: int
+ *Return:  test
  */
 char *_strdup(char *str)
 {
@@ -16,12 +16,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	duplicate = (char*) malloc(strlen(str) + 1);
+	duplicate = (char *) malloc(strlen(str) + 1);
 	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
-
 	strcpy(duplicate, str);
 
 	return (duplicate);
