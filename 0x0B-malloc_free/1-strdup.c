@@ -1,32 +1,26 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
- *strdup -test
+ *_strdup -test
  *@size: int
  *Return - test
  */
 char *_strdup(char *str)
 {
-	unsigned int i;
-	char *arr;
-
-	if (size == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	arr = (char*) malloc(size* sizeof(char));
-
-	if (arr == NULL)
+	char *duplicate = (char*) malloc(strlen(str) + 1);
+	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < size; i++)
-	{
-		arr[i] = c;
-	}
+	strcpy(duplicate, str);
 
-	return (arr);
+	return (duplicate);
 }
