@@ -1,8 +1,7 @@
+#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "dog.h"
-
 /**
  *new_dog - Creates a new dog_t and stores a copy of name and owner.
  *@name: Pointer to a string containing the dog's name.
