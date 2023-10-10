@@ -4,9 +4,8 @@
  *struct dog - Represents information about a dog.
  *@name: Pointer to a string containing the dog's name.
  *@age: The age of the dog.
- *@owner: i to a string
- *@owner:  */
-
+ *@owner: Pointer to a strin
+ */
 struct dog
 {
 	char *name;
