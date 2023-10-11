@@ -13,15 +13,3 @@ void print_name(char *name, void(*f)(char*))
 		f(name);
 	}
 }
-
-/**
- *print - A printing function.
- *@name: The name to be printed
- */
-void print(char *name)
-{
-	if (name != NULL)
-	{
-		printf("Name: %s\n", name);
-	}
-}
