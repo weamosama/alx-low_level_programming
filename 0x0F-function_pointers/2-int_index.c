@@ -4,6 +4,7 @@
  *@array: array to go through
  *@size: size of array
  *@cmp: function
+ *Return: test
  */
 int int_index(int *array, int size, int(*cmp)(int))
 {
