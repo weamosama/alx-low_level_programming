@@ -1,15 +1,12 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
-
 /**
- *print_name - Prints a name using a custom printing function.
- *@name: The name to be printed.
- *@f: A pointer to a functio
+ * print_name - print the name
+ * @name: name to print
+ * @f: function to use
  */
-void print_name(char *name, void(*f)(char*))
+void print_name(char *name, void (*f)(char *))
 {
 	if (name != NULL && f != NULL)
-	{
 		f(name);
-	}
 }
