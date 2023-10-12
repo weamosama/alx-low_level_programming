@@ -10,6 +10,7 @@
 void print_all(const char *const format, ...)
 {
 	va_list args;
+
 	va_start(args, format);
 
 	char *separator = "";
@@ -18,7 +19,8 @@ void print_all(const char *const format, ...)
 
 	while (format[++i])
 	{
-		while (i > 0 && format[i - 1] && (format[i - 1] == 'c' || format[i - 1] == 'i' || format[i - 1] == 'f' || format[i - 1] == 's'))
+		while (i > 0 && format[i - 1] && (format[i - 1] == 'c' || format[i - 1] == 'i'
+					|| format[i - 1] == 'f' || format[i - 1] == 's'))
 		{
 			printf("%s", separator);
 			separator = ", ";
