@@ -3,9 +3,9 @@
 #include <stdarg.h>
 
 /**
- *print_all - Print
- *@format: A string containing format specifiers
- *@...: The arguments to be printed
+ *print_all - Prin
+ *@format: A string
+ *@...: The arguments
  */
 void print_all(const char *const format, ...)
 {
@@ -18,30 +18,30 @@ void print_all(const char *const format, ...)
 
 	while (format[++i])
 	{
-		if (i > 0 && (format[i - 1] == 'c' || format[i - 1] == 'i' || format[i - 1] == 'f' || format[i - 1] == 's'))
+		while (i > 0 && format[i - 1] && (format[i - 1] == 'c' || format[i - 1] == 'i' || format[i - 1] == 'f' || format[i - 1] == 's'))
 		{
 			printf("%s", separator);
 			separator = ", ";
+			break;
 		}
 
-		if (format[i] == 'c')
+		switch (format[i])
 		{
-			printf("%c", va_arg(args, int));
-		}
-		else if (format[i] == 'i')
-		{
-			printf("%d", va_arg(args, int));
-		}
-		else if (format[i] == 'f')
-		{
-			printf("%f", (float) va_arg(args, double));
-		}
-		else if (format[i] == 's')
-		{
-			str = va_arg(args, char *);
-			if (!str)
-				str = "(nil)";
-			printf("%s", str);
+			case 'c':
+				printf("%c", va_arg(args, int));
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				break;
+			case 'f':
+				printf("%f", (float) va_arg(args, double));
+				break;
+			case 's':
+				str = va_arg(args, char *);
+				if (!str)
+					str = "(nil)";
+				printf("%s", str);
+				break;
 		}
 	}
 
