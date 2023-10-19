@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "lists.h"
-
+#include <stdio.h>
 /**
  *print_list - Prints.
  *@h: A pointer to the head
