@@ -10,6 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t size = 0;
+	unsigned int i;
 
 	if (h == NULL)
 	{
@@ -28,7 +29,7 @@ size_t print_list(const list_t *h)
 	_putchar('[');
 	while (h != NULL)
 	{
-		size+;
+		size++;
 		if (h->str == NULL)
 		{
 			_putchar('n');
@@ -37,7 +38,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			for (unsigned int i = 0; i < h->len; i++)
+			for (i = 0; i < h->len; i++)
 			{
 				_putchar(h->str[i]);
 			}
