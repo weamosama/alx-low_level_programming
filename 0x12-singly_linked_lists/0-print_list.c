@@ -5,22 +5,46 @@
  *@h: A pointer to the head
  *
  *Return: The number
- */
+*/
 size_t print_list(const list_t *h)
 {
-	size_t size = 0;
+	size_t count = 0;
 	unsigned int i;
 
 	while (h != NULL)
 	{
+		char str_len[16];
+		_putchar('[');
 		if (h->str == NULL)
 		{
-			for (i = 0; i < h->len; i++)
+			_putchar('0');
+		}
+		else
+		{
+			size_t len = h->len;
+			size_t i = 0;
+			while (len > 0)
 			{
-				_putchar('n');
-				_putchar('i');
-				_putchar('l');
+				str_len[i] = (len % 10) + '0';
+				len /= 10;
+				i++;
 			}
+
+			while (i > 0)
+			{
+				i--;
+				_putchar(str_len[i]);
+			}
+		}
+		_putchar(']');
+		_putchar(' ');
+		if (h->str == NULL)
+		{
+			_putchar('(');
+			_putchar('n');
+			_putchar('i');
+			_putchar('l');
+			_putchar(')');
 		}
 		else
 		{
@@ -29,11 +53,9 @@ size_t print_list(const list_t *h)
 				_putchar(h->str[i]);
 			}
 		}
-
 		h = h->next;
-		size++;
+		count++;
 		_putchar('\n');
 	}
-
-	return size;
+	return (count);
 }
