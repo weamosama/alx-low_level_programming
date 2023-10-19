@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		else
 		{
 			size_t len = h->len;
-			size_t i = 0;
+		       	i = 0;
 
 			while (len > 0)
 			{
