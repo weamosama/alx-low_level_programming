@@ -13,27 +13,19 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		char str_len[16];
 		_putchar('[');
 		if (h->str == NULL)
-		{
 			_putchar('0');
-		}
 		else
 		{
 			size_t len = h->len;
 			size_t i = 0;
+
 			while (len > 0)
 			{
-				str_len[i] = (len % 10) + '0';
+				_putchar((len % 10) + '0');
 				len /= 10;
 				i++;
-			}
-
-			while (i > 0)
-			{
-				i--;
-				_putchar(str_len[i]);
 			}
 		}
 		_putchar(']');
@@ -49,9 +41,7 @@ size_t print_list(const list_t *h)
 		else
 		{
 			for (i = 0; i < h->len; i++)
-			{
 				_putchar(h->str[i]);
-			}
 		}
 		h = h->next;
 		count++;
