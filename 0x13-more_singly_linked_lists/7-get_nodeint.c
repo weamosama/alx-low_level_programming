@@ -7,7 +7,7 @@
  *@index: the index
  *Return: a pointer to the nth node, or NULL
  */
-listint_t* get_nodeint_at_index(listint_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i;
 
