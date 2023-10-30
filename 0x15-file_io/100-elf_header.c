@@ -48,21 +48,21 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s elf_filename\n", argv[0]);
-		return (98);
+		exit (98);
 	}
 
 	file_descriptor = open(argv[1], O_RDONLY);
 	if (file_descriptor == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", argv[1]);
-		return (98);
+		exit  (98);
 	}
 
 	if (read(file_descriptor, &header, sizeof(Elf64_Ehdr)) != sizeof(Elf64_Ehdr) || memcmp(header.e_ident, ELFMAG, SELFMAG) != 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Not an ELF file: %s\n", argv[1]);
 		close(file_descriptor);
-		return (98);
+		exit (98);
 	}
 
 	printf("ELF Header:\n");
