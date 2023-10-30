@@ -4,11 +4,11 @@
 #include <unistd.h>
 
 /**
- *main - Copy the content of one file to other
+ *main - Copy the content of one file to another file.
  *@argc: The number of arguments.
  *@argv: An array of argument strings.
  *
- *Return: 0 on success, or an exit code on failure.
+ *Return: (0) on success, or an exit code on failure.
  */
 int main(int argc, char *argv[])
 {
