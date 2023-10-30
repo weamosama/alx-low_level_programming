@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- *create_file - Creates a file with specified permissions and writes text to it.
+ *create_file - Creates a file with specified permissions with text.
  *@filename: The name of the file to create.
  *@text_content: A NULL-terminated string to write to the file.
  *
@@ -14,6 +14,7 @@ int create_file(const char *filename, char *text_content)
 	int fd;
 	ssize_t t_length;
 	ssize_t written;
+
 	if (!filename)
 		return (-1);
 
