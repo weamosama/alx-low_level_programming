@@ -8,14 +8,14 @@
  *
  *Return: The address of the new element, or NULL if it failed.
  */
-dlistint_t* add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t * new_node;
+	dlistint_t *new_node;
 
 	/*Allocate memory for the new node */
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
-		return NULL;
+		return (NULL);
 
 	/*Set the values for the new node */
 	new_node->n = n;
