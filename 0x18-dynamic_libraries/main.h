@@ -1,6 +1,8 @@
 #ifndef MYHEADER_H
 #define MYHEADER_H
 #include <stdlib.h>
+#include <stdio.h>
+
 /* _putchar - writes a character to the standard output */
 int _putchar(char c);
 
