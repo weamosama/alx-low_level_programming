@@ -1,4 +1,6 @@
-
+#include "hash_tables.h"
+#include <stddef.h>
+#include <string.h>
 /**
  *  *hash_table_get - Retrieves a value associated with a key in a hash table.
  *   *@ht: The hash table to look into.
@@ -23,3 +25,4 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			}
 
 								return (NULL);
+}
