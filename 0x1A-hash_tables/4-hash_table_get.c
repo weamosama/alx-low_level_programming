@@ -1,4 +1,3 @@
-nclude "hash_tables.h"
 
 /**
  *  *hash_table_get - Retrieves a value associated with a key in a hash table.
